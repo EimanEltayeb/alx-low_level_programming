@@ -2,9 +2,9 @@
 int main(void)
 
 {
-	char *m[] = "\"Pragramming is like building a multilingual puzzle\n";
 
-	puts(m);
+	char str[]
+	puts(char);
 
 	return (0);
 }
