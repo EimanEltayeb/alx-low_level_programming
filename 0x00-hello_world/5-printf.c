@@ -1,8 +1,8 @@
 #include<stdio.h>
-/*
+/**
  * main - Entry point
  *
- * Description: a program to print a string
+ * Description: a program to print a specific text
  *
  * Return: 0
  */
