@@ -1,10 +1,12 @@
 #include<stdio.h>
-
-/*
- *main = Entry
- *Return = 0
+/**
+ *main - Entry
+ *
+ *Description: a program to print numbers
+ *
+ *Return: 0
  */
-int main(void);
+int main(void)
 {
 	int i;
 
@@ -12,11 +14,10 @@ int main(void);
 
 	while (i < 10)
 	{
-		printf("%i", i);
-		
+		printf("%d", i);
 		i++;
-	{
-	printf('\n');
+	}
+	printf("\n");
 
 	return (0);
 }
