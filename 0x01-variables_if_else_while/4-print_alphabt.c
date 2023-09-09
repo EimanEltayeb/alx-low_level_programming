@@ -13,8 +13,8 @@ int main(void)
 		if (xx != 'q' && xx != 'o')
 		{
 			putchar(xx);
-			xx++;
 		}
+		xx++;
 	}
 	putchar('\n');
 	return (0);
