@@ -4,7 +4,7 @@
  * main = Entry function
  * Return = 0
  */
-int main(void);
+int main(void)
 {
 	char Alpha = "a";
 	char Alphabit = "A";
