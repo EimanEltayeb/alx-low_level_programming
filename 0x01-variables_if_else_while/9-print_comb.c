@@ -1,8 +1,10 @@
 #include<stdio.h>
 
-/*
- *main = Entry
- *Return = 0
+/**
+ *main - Entry
+ *Description: a program to print numbers
+ *
+ *Return: 0
  */
 int main(void)
 {
