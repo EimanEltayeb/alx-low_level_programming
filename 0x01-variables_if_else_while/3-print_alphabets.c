@@ -1,21 +1,23 @@
 #include<stdio.h>
-
-/*
- * main = Entry function
- * Return = 0
+/**
+ * main - Entry point
+ *
+ * Description: a program to print a specific text
+ *
+ * Return: 0
  */
 int main(void)
 {
-	char Alpha = "a";
-	char Alphabit = "A";
+	char Alpha = 'a';
+	char Alphabit = 'A';
 
-	while (Alpha <= "z")
+	while (Alpha <= 'z')
 	{
 		putchar(Alpha);
 		Alpha++;
 	}
 
-	while (Alphabit <= "Z")
+	while (Alphabit <= 'Z')
 	{
 		putchar(Alphabit);
 		Alphabit++;
