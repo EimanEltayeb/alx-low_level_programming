@@ -12,12 +12,12 @@ int main(void)
 	while (Alpha <= "z")
 	{
 		putchar(Alpha);
-		Alpa++;
+		Alpha++;
 	}
 
 	while (Alphabit <= "Z")
 	{
-		putchat(Alphabit);
+		putchar(Alphabit);
 		Alphabit++;
 	}
 
