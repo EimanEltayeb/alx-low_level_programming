@@ -1,14 +1,25 @@
 #include<stdio.h>
-
+/**
+ * main - Entry point
+ *
+ * Description: a program to print a specific text
+ *
+ * Return: 0
+ */
 int main(void)
 
 {
 	char c;
 	int i;
+	long l;
+	long long ll;
 	float f;
 
-	printf("Size of a char: 1 byte(s);
-	printf("Size of an int: 1 byte(s);
-	printf("Size of a long int: 1 byte(s)
-	printf("Size of a long long int: 1 byte(s)
-	printf("Size of a float: 1 byte(s)
+	printf("Size of a char: %lu byte(s)", (unsigned long)sizeof(c));
+	printf("Size of an int: %lu byte(s)", (unsigned long)sizeof(i));
+	printf("Size of a long int: %lu byte(s)", (unsigned long)sizeof(l);
+	printf("Size of a long long int: %lu byte(s)", (unsigned long)sizeof(ll));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+
+	return (0);
+}
