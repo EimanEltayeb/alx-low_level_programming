@@ -3,7 +3,10 @@
 #include <time.h>
 /**
  * main - Entry point
- * Return - Always 0 (success)
+ *
+ * Description: a program to tell the sign of the number
+ *
+ * Return: 0
  */
 int main(void)
 {
