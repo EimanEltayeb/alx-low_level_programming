@@ -2,10 +2,12 @@
 #include <time.h>
 #include<stdio.h>
 
-/*
- * main - Entry function
+/**
+ * main - Entry point
  *
- * Return - Always 0
+ * Description: a program to gif the last digit of a num
+ *
+ * Return: 0
  */
 int main(void)
 {
