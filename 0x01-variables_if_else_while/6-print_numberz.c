@@ -1,7 +1,10 @@
 #include<stdio.h>
-/*
- * main = Entry
- * Return = 0
+/**
+ * main - Entry
+ *
+ * Description: a program to print singl digit numbers
+ *
+ * Return: 0
  */
 int main(void)
 {
@@ -12,5 +15,7 @@ int main(void)
 		putchar(i + '0');
 		i = i + 1;
 	}
+	putchar('\n');
+
 	return (0);
 }
