@@ -1,8 +1,10 @@
 #include<stdio.h>
-
-/*
- *main = Entry
- *Return = 0
+/**
+ * main - Entry point
+ *
+ * Description: a program to print a specific text
+ *
+ * Return: 0
  */
 int main(void)
 {
