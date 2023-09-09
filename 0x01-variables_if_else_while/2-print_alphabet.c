@@ -1,8 +1,10 @@
 #include<stdio.h>
-
-/*
- * main - Entry function
- * Return = 0
+/**
+ * main - Entry point
+ *
+ * Description: a program to print alphabet
+ *
+ * Return: 0
  */
 int main(void)
 {
