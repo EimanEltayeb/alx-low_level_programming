@@ -10,8 +10,9 @@
 
 int main(void)
 {
-	char c = '_putchar';
-	_putchar(c);
+	char sen[] = "_putchar";
+
+	_putchar(sen);
 
 	return (0);
 }
