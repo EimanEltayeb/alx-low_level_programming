@@ -12,9 +12,10 @@ int main(void)
 	sum = i + j;
 	for (x = 0; x < 50; x++)
 	{
-		printf("%d\n", i);
-		i = j;
+		printf("%d, ", i);
 		j = sum;
+		i = j - i;
 	}
+	printf("\n");
 	return (0);
 }
