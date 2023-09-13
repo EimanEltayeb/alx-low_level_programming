@@ -1,9 +1,22 @@
 #include"main.h"
-/*int print_sign - prints the sign of a number
+/**
+ * print_sign - prints the sign of a number
+ * @n : input number
+ * Return: 1 if positive, 0 if 0, -1 if negative
  */
 int print_sign(int n)
 {
 	if (n > 0)
 	{
 		_puchar('+');
-
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+		_putchar('-');
+		return (-1);
+}
