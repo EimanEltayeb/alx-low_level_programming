@@ -13,7 +13,7 @@ int main(void)
 	char sen[] = "_putchar";
 	int c;
 
-	for (c = 0 : c < 8 : c++)
+	for (c = 0 ; c < 8 ; c++)
 	_putchar(sen[c]);
 	_putchar('\n');
 
