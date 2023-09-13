@@ -8,7 +8,7 @@
  */
 void print_alphabet(void)
 {
-	char c = 'a';
+	int c = 'a';
 
 	while (c <= 'z')
 	{
@@ -16,6 +16,4 @@ void print_alphabet(void)
 		c++;
 	}
 	_putchar('\n');
-
-	return (void);
 }
