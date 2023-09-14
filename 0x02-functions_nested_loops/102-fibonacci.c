@@ -5,16 +5,17 @@
  */
 int main(void)
 {
-	int i, j, x, sum;
+	unsigned long i, j, sum;
+	int x;
 
-	i = 1;
-	j = 2;
-	sum = i + j;
+	i = 0;
+	j = 1;
 	for (x = 0; x < 50; x++)
 	{
-		printf("%d, ", i);
+		sum = i + j;
+		printf("%lu, ", sum);
+		i = j;
 		j = sum;
-		i = j - i;
 	}
 	printf("\n");
 	return (0);
