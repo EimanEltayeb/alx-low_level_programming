@@ -13,9 +13,11 @@ int main(void)
 	for (x = 0; x < 50; x++)
 	{
 		sum = i + j;
-		printf("%lu, ", sum);
+		printf("%lu", sum);
 		i = j;
 		j = sum;
+		if (x < 49)
+		printf(", ");
 	}
 	printf("\n");
 	return (0);
