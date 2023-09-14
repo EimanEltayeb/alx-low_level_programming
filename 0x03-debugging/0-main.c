@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	i = 98;
+	scanf("%d", &i);
 	positive_or_negative(i);
 
 	return (0);
