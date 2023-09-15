@@ -8,13 +8,8 @@
  *
  * Return: 0
  */
-int main(void)
+int main(int n)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
 	/*check if the number is more than zero*/
 	if (n > 0)
 
