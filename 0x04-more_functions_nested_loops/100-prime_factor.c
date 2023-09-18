@@ -1,22 +1,22 @@
 #include"main.h"
+#include<math.h>
 /**
  * main - Entry function
  * Return: 0
  */
 int main(void)
 {
-	long int i;
+	long int n = 612852475143;
+	long int sq = sqrt(n);
+	long maxf;
+	long i;
 
-	for (i = 612852475141; i >= 1; i--)
+	for (i = 1; i <= sq; i++)
 	{
-		if (612852475143 % i == 0)
-		{
-			printf("%lu", i);
-			break;
-		}
-		else
-			continue;
+		if (n % i == 0)
+			maxf = i;
 	}
-	printf("\n");
+	printf("%lu\n", maxf);
 	return (0);
 }
+
