@@ -1,11 +1,19 @@
 #include"main.h"
 /**
  *print_number - prints an integer.
+ *@n: input number
  */
 void print_number(int n)
 {
-	if (n >= 0 && n < 10)
-		_putchar(n + '0');
-	else if (n >= 10 && n < 100)
+	unsigned int k = n;
+
+	if (n < 0)
 	{
-		_putchar(n % 
+		k = -1 * n;
+		_putchar('-');
+	}
+	k /= 10;
+	if (k != 0)
+		print_number(k);
+	_putchar((unsigned int) n % 10 + '0');
+}
