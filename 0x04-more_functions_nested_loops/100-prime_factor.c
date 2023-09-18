@@ -7,7 +7,7 @@
 int main(void)
 {
 	long int n = 612852475143;
-	long int sq = sqrt(n);
+	double sq = sqrt(n);
 	long maxf;
 	long i;
 
