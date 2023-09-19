@@ -5,7 +5,11 @@
  */
 void _puts(char *str)
 {
+	int size = 0;
 	int i;
 
-	for (i = str; i <= ; i++)
-		_putchar
+	while (str[size] != 0)
+		size++;
+	for (i = 0; i < (size - 1); i++)
+		_putchar(*(str + i));
+}
