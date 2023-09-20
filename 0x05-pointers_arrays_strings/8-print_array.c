@@ -22,6 +22,8 @@ void print_array(int *a, int n)
 				printf("\n");
 		}
 	}
+	else if (n <= 0)
+		printf("\n");
 	else
 	{
 		for (j = 0; j <= size; j++)
