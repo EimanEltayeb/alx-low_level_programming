@@ -9,20 +9,15 @@ char *_strcat(char *dest, char *src)
 {
 	int dsize = 0;
 	int ssize = 0;
-	int i, j;
-	char *link;
+	int i;
 
 	while (dest[dsize] != 0)
 		dsize++;
 	while (src[ssize] != 0)
 		ssize++;
-	for (i = 0; i < (ssize - 1); i++)
-	{
-		*(link + i) = *(dest + i);
-	}
-	for (j = 0; j < ssize; j++)
-	{
-		*(link + (dsize - 2) + j) = *(src + j);
-	}
-	return (*link);
+
+
+	for (i = dsize; i < (dsize + ssize + 1); i++)
+		dest[i] = src[i- dsize];
+	return (dest);
 }
