@@ -7,7 +7,7 @@
 char *cap_string(char *s)
 {
 	int i, j;
-	char x[12];
+	char x[13];
 	int size;
 
 	x[0] = ' ';
@@ -22,6 +22,7 @@ char *cap_string(char *s)
 	x[9] = ')';
 	x[10] = '{';
 	x[11] = '}';
+	x[12] = '\t';
 
 	while (s[size] != 0)
 		size++;
@@ -29,7 +30,7 @@ char *cap_string(char *s)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			for (j = 0; j < 12; j++)
+			for (j = 0; j < 13; j++)
 			{
 				if (s[i - 1] == x[j])
 					s[i] = s[i] - 32;
