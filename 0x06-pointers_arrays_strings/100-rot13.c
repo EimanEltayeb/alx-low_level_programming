@@ -6,7 +6,18 @@
  */
 char *rot13(char *s)
 {
-	int i;
+	int i, j;
+	char rot1[], rot2[];
 
+	rot1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	rot2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	for (i = 0; s[i] != 0; i++)
-	       	
+	{
+		for (j = 0; j <= 51; j++)
+		{
+			if (s[i] == rot1[j])
+				s[i] = rot2[j];
+		}
+	}
+	return (s);
+}
