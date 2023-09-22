@@ -32,7 +32,7 @@ char *cap_string(char *s)
 		{
 			for (j = 0; j < 13; j++)
 			{
-				if (s[i - 1] == x[j])
+				if (i == 0 || s[i - 1] == x[j])
 					s[i] = s[i] - 32;
 			}
 		}
