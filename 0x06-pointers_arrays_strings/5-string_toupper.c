@@ -2,7 +2,7 @@
 /**
  * string_toupper - changes lowercase letters to uppercase.
  * @s: input string
- * Return: s
+ * Return: s output string
  */
 char *string_toupper(char *s)
 {
@@ -15,6 +15,8 @@ char *string_toupper(char *s)
 	{
 		if (s[i] <= 'z' && s[i] >= 'a')
 			s[i] = s[i] - 32;
+		else
+			s[i] = s[i];
 	}
 	return (s);
 }
