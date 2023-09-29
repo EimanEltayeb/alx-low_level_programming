@@ -13,7 +13,7 @@ int is_palindrome(char *s)
 	return (check_pali(s, size));
 }
 /**
- * strsize: to find the string size
+ * strsize - to find the string size
  * @s: input
  * Return: size
  */
@@ -31,10 +31,9 @@ int strsize(char *s)
  */
 int check_pali(char *s, int size)
 {
-	if (*s == '\0')
+	if (size < 2)
 		return (1);
-	else if (*s == *(-s + size))
-		return (check_pali(s + 1, size - 2);
-	else
+	if (*s != s[size - 1])
 		return (0);
+	return (check_pali(s + 1, size - 2));
 }
