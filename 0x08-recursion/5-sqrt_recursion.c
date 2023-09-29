@@ -1,21 +1,27 @@
 #include "main.h"
 /**
- * _sqrt_recursion - a function returns the natural sqrt of a number.
+ * _sqrt_recursion - a function that returns the natural sqrt of a num
  * @n: input num
- * return: sqrt or -1
+ * @x: sqrt
+ * Return: result of function sqrt_rec
  */
+int sqrt_rec(int n, int x);
 int _sqrt_recursion(int n)
 {
-	int i = 1;
-	int sqrt;
-
-	if (
-
-			_sqrt_recursion(n)
+	return (sqrt_rec(n, 1));
 }
-#include "main.h"
+/**
+ * sqrt_rec - a upport function
+ * @n: input number
+ * @x: sqrt
+ * Return: x or -1
+ */
+int sqrt_rec(int n, int x)
 {
-	
- printf("%i",	__sqrt_recursion(8));
+	if (x * x == n)
+		return (x);
+	else if (x * x < n)
+		return (sqrt_rec(n, x + 1));
+	else
+		return (-1);
 }
-
