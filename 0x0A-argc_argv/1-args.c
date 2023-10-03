@@ -2,8 +2,8 @@
 /**
  * main - main function
  *@argc: argument number
- *@argv[]: arguments
- *return: 0;
+ *@argv: arguments
+ *Return: 0
  */
 int main(int argc, char *argv[])
 {
