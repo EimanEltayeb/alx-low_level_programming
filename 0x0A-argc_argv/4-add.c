@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - a program that adds positive numbers
  * @argc: num of arguments
@@ -11,20 +12,17 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if ( *argv[i] < 47 || *argv[i] > 57)
+		if (*argv[i] < 47 || *argv[i] > 57)
 		{
-			printf("Eror\n");
+			printf("Error\n");
 			return (1);
 		}
 	}
 	if (argc == 1)
-	printf("0\n");
+		printf("0\n");
 	for (j = 1; j < argc; j++)
 	{
-			if (argv[i] > 0)
-			{
-				result += argv[i];
-			}
+		result += atoi(argv[j]);
 	}
 	printf("%d\n", result);
 	return (0);
