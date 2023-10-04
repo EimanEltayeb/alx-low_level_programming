@@ -6,18 +6,21 @@
  *@argv: arguments
  *Return: 0
  */
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
 	int cents = atoi(argv[1]);
 	int num = 0, change;
 
-	if (argc < 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (argv[1][0] == '-')
+	if (cents < 0)
+	{
 		printf("0\n");
+		return (0);
+	}
 	else
 	{
 		num += cents / 25;
@@ -26,8 +29,8 @@ int main(int argc, char * argv[])
 		change = change % 10;
 		num += change / 5;
 		change = cents % 5;
-       		num += change / 2;
-        	change = change % 2;
+		num += change / 2;
+		change = change % 2;
 		num += change;
 	}
 	printf("%d\n", num);
