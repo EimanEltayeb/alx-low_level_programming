@@ -9,7 +9,7 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	unsigned int i;
-	void *temp;/*a temperory pointer to hold the value of ptr*/
+	char *temp;/*a temperory pointer to hold the value of ptr*/
 
 	if (ptr == NULL)
 	{
@@ -23,7 +23,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		temp = malloc(new_size);
 		for (i = 0; i < new_size; i++)
-			((char *)temp)[i] = ((char *)ptr)[i];
+			temp[i] = ((char *)ptr)[i];
 		free(ptr);
 		return ((void *)temp);
 	}
@@ -36,6 +36,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		* free(ptr);
 		 */
 		ptr = malloc(new_size);
+		if (ptr == NULL)
+		{
+			temp = malloc(new_size);
+			for (i = 0; i < old_size; i++)
+				temp[i] = ((char *)ptr)[i];
+			free(ptr);
+		}
 	}
 	return (ptr);
 }
