@@ -1,10 +1,13 @@
 #ifndef _DOG_H_
 #define _DOG_H_
+#include <stdio.h>
+#include <stdlib.h>
+
 struct dog
 {
-	typedef char *name;
-	typedef float age;
-	typedef char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
 
 #endif
