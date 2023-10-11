@@ -2,8 +2,8 @@
 /**
  *int_index - searches for intiger
  *@array: input array
- *size: array size
- *cmp: function pointer
+ *@size: array size
+ *@cmp: function pointer
  *Return: intiger
  */
 int int_index(int *array, int size, int (*cmp)(int))
@@ -22,4 +22,4 @@ int int_index(int *array, int size, int (*cmp)(int))
 		}
 	}
 	return (-1);
-}	
+}
