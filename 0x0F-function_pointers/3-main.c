@@ -17,11 +17,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	/*if (opr != '*' && opr != '+' && opr != '-' && opr != '/' && opr != '%')*/
-	/*{
-		printf("Error\n");
-		exit(99);
-	}*/
 	if (num2 == 0)
 	{
 		printf("Error\n");
