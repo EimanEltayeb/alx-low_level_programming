@@ -5,7 +5,7 @@
  * @int: g
  * Return: int
  */
-int (*get_op_func(char *s))(int num1, int num2)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
         {"+", op_add},
@@ -17,13 +17,12 @@ int (*get_op_func(char *s))(int num1, int num2)
     };
 	int i = 0;
 
-	while (!(strcmp((ops[i].op), s)))
+	while (ops[i].op != NULL)
 	{
+		if (strcmp(ops[i].op, s) == 0)
+			return (ops[i].f);
 		i++;
-		if (ops[i].op == NULL)
-			return (NULL);
 	}
-	get_op_func(*s) = ops[i];
 
-	return (get_op_func(num1, num2));
+	return (NULL);
 }
