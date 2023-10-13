@@ -6,17 +6,17 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i;
-	const char *ptr = format;
-	char ch;
+	int i, j = 0;
+	char ch, x;
 	float fl;
 	char *str;
 	va_list args;
 
 	va_start(args, format);
-	while (*ptr)
+	while (format[j] != '\0')
 	{
-		switch (*ptr)
+		x = format[j];
+		switch (x)
 		{
 			case ('c'):
 				{
@@ -45,9 +45,9 @@ void print_all(const char * const format, ...)
 					break;
 				}
 		}
-		if (*(ptr + 1))
+		if (format[j + 1] != '\0')
 			printf(", ");
-		++ptr;
+		j++;
 	}
 	printf("\n");
 	va_end(args);
