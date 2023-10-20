@@ -1,11 +1,14 @@
 #include "lists.h"
 #include <string.h>
 /**
- *
+ * add_node - adds a new node at the beginnign of a list
+ * @head: pointer of pointer.
+ * @str: string
+ * Return: pointer
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t new;
+	list_t *new;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -13,6 +16,6 @@ list_t *add_node(list_t **head, const char *str)
 	new->str = strdup(str);
 	new->next = (*head);
 	(*head) = new;
-	return (head);
+	return (*head);
 }
 
