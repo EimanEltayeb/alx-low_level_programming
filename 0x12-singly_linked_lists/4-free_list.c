@@ -5,13 +5,8 @@
  */
 void free_list(list_t *head)
 {
-	list_t *temp1, *temp2;
-
-	temp1 = head;
-	while (temp1 != NULL)	
-	{
-		temp2 = temp1->next;
-		free(temp1);
-		temp1 = temp2;
-	}
+	if (head == NULL)
+	       free(head);
+	else	
+		free_list(head->next);
 }
