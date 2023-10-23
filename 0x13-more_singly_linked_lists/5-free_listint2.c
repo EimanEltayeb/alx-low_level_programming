@@ -15,4 +15,4 @@ void free_listint2(listint_t **head)
 		temp2 = temp;
 	}
 	head = NULL;
-}		
+}
