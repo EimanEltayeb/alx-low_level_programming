@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * dd_nodeint - adds a new node at the beginning of a listint_t list
+ * add_nodeint - adds a new node at the beginning of a listint_t list
  * @head: pointer
  * @n: data
  * Return: pointer
