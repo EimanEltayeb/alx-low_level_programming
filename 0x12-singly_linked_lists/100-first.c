@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *before_main - add text before main
+ *before - add text before main
  */
 void before(void) __attribute__((constructor));
 void before(void)
