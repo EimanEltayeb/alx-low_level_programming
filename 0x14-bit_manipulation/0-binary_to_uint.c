@@ -21,7 +21,9 @@ void rev_string(char *s)
 
 
 /**
- *
+ * binary_to_uint - converts a binary number to an unsigned int.
+ * @b: number to be comverted
+ * Return: the number in binary
  */
 unsigned int binary_to_uint(const char *b)
 {
