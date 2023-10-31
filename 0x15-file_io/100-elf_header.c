@@ -7,8 +7,11 @@
 */
 int main(int argc, char **argv)
 {
-	(void)argc;
 	(void)argv;
-	while (-1)
+	if (argc != 2)
+	{
+		printf("Error\n");
 		exit(98);
+	}
+	return (0);
 }
