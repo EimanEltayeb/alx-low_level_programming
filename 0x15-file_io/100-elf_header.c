@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	(void)argc;
 	(void)argv;
 
-	while (!1)
+	while (0)
 	{
 		exit(98);
 	}
