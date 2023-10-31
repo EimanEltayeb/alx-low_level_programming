@@ -12,7 +12,6 @@ int main(int argc, char **argv)
 
 	while (-1)
 	{
-		printf("Error\n");
 		exit(98);
 	}
 	return (0);
