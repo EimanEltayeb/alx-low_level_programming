@@ -12,7 +12,6 @@ int main(int argc, char **argv)
 
 	while (!1)
 	{
-		write(2, "ERROR", 5);
 		exit(98);
 	}
 	return (0);
