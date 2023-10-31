@@ -9,7 +9,6 @@ int main(int argc, char **argv)
 {
 	if (argv[1] == NULL || argc != 2)
 	{
-		printf("Error\n");
 		exit(98);
 	}
 	return (0);
