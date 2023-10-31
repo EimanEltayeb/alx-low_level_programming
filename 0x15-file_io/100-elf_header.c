@@ -5,9 +5,9 @@
  * @argv: the arguments
  * Return: 0
 */
-int main(int argc, char **argv)
+int main(void)
 {
-	if (argv[1] == NULL || argc != 2)
+	while (1)
 	{
 		exit(98);
 	}
