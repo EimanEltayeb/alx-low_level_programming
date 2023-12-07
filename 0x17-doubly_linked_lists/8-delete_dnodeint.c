@@ -3,7 +3,7 @@
  * delete_dnodeint_at_index - delete node at index.
  * @head: pointer
  * @index: index of the node to be deleted
- * Retern: 1 or -1
+ * Return: 1 or -1
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
