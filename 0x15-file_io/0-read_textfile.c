@@ -8,23 +8,28 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	char *buffer;
 	ssize_t readbytes;
-	
+	int write_ret;
+	char buffer[BUF_SIZE * 8];
+
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
-		return (0);
 	readbytes = read(fd, buffer, letters);
 	if (readbytes == -1)
+	{
+		close(fd);
 		return (0);
+	}
 
-	write(1, buffer, readbytes);
-	free(buffer);
+	write_ret =	write(1, buffer, readbytes);
+	if (write_ret == -1 || (ssize_t)write_ret != readbytes)
+	{
+		close(fd);
+		return (0);
+	}
 	close(fd);
 	return (readbytes);
 }
