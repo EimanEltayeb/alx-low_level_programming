@@ -8,10 +8,10 @@ size_t print_dlistint(const dlistint_t *h)
 {
 	dlistint_t copy = *h;
 	dlistint_t *temp = &copy;
-	int count = 0;
+	size_t count = 0;
 
 	if (h == NULL)
-		return (1);
+		return (NULL);
 	while (temp != NULL)
 	{
 		count++;
