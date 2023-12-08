@@ -6,10 +6,14 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	dlistint_t copy = *h;
-	dlistint_t *temp = &copy;
+	dlistint_t copy;
+	dlistint_t *temp;
 	int count = 0;
 
+	if (h == NULL)
+		return (count);
+	copy = *h;
+	temp = &copy;
 	while (temp != NULL)
 	{
 		count++;
