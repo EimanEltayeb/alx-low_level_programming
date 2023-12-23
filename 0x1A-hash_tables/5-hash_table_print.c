@@ -21,7 +21,8 @@ void hash_table_print(const hash_table_t *ht)
 					check = 1;
 				else
 					printf(", ");
-				printf("'%s': '%s'", temp->key, temp->value);
+				if (temp->key != NULL && temp->value != NULL)
+					printf("'%s': '%s'", temp->key, temp->value);
 				temp = temp->next;
 			}
 		}
