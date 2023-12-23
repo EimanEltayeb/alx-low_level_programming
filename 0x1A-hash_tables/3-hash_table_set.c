@@ -15,7 +15,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	size = ht->size;
 	index = key_index((const unsigned char *)key, size);
-	printf("%lu\n", index);
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
 		return (0);
@@ -54,7 +53,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			temp = temp->next;
 		}
 		temp->next = new;
-		printf("%s -- key = %s", new->value, new->key);
 	}
 	return (1);
 }
