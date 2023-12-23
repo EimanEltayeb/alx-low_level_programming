@@ -14,6 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	size = ht->size;
 	index = key_index((const unsigned char *)key, size);
+	printf("%lu\n", index);
 
 	if (key == NULL)
 		return (0);
