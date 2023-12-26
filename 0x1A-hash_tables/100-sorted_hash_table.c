@@ -152,7 +152,7 @@ void shash_table_print(const shash_table_t *ht)
 /**
  * 
 */
-void shash_table_print_rev(const shash_table_t *ht)
+/*void shash_table_print_rev(const shash_table_t *ht)
 {
 	unsigned long int index;
 	shash_node_t *temp;
@@ -184,7 +184,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 	if (temp != NULL)
 		print_nod_rev(xxx)
 	printf(*****)
-}
+}*/
 
 /**
  * 
