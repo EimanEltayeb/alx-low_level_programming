@@ -32,7 +32,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	if (ht == NULL || key == NULL)
 		return (0);
 	/* heeeeere comes an edit*/
-	index = key[0];
+	index = key_index((const unsigned char *)key, ht->size);
 	new = malloc(sizeof(shash_node_t));
 	if (new == NULL)
 		return (0);
