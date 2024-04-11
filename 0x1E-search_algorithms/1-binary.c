@@ -31,8 +31,8 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t i = 0, j = size - 1, c;
 
-	if (!array)
-		return (-1);
+	/*if (!array)*/
+		/*return (-1);*/
 	while (1)
 	{
 		print_array(array, i, j);
