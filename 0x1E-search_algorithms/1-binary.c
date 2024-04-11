@@ -36,7 +36,7 @@ int binary_search(int *array, size_t size, int value)
 	while (1)
 	{
 		print_array(array, i, j);
-		c = (i + j) / 2;
+		c = i + (j - i) / 2;
 		if (array[c] == value)
 			return (c);
 		if (i == j)
