@@ -8,7 +8,7 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	size_t m, l, h;
+	size_t m, l, h, min;
 
 	m = sqrt(size);
 	if (!array)
@@ -24,7 +24,11 @@ int jump_search(int *array, size_t size, int value)
 			break;
 		}
 	}
-	for (; l <= h; l++)
+	if (h < size - 1)
+		min = h;
+	else
+		min = size - 1;
+	for (; l <= min; l++)
 	{
 		printf("Value checked array[%ld] = [%d]\n", l, array[l]);
 		if (array[l] == value)
