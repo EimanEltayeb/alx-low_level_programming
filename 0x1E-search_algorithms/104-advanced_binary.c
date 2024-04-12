@@ -43,10 +43,8 @@ int advanced_binary(int *array, size_t size, int value)
 	{
 		if (array[c - 1] < value)
 			return (c);
-		else
-			rec = advanced_binary(&array[i], c - i + 1, value);
+		rec = advanced_binary(&array[i], c - i + 1, value);
 	}
-			
 	else if (array[c] > value)
 	{
 			rec = advanced_binary(&array[i], c - i, value);
